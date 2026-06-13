@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <style>
+        
+        body{
+            background-color: black;
+        }
+        
+        .navbar{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: aliceblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+        }
+        .nav{
+        
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 600px;
+            cursor: pointer;
+        }
+
+        .rightnav{
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+            margin-right: 30px;
+        }
+        .button1{
+            background-color: #157BCF; 
+            color: aliceblue;
+            border: none;
+            border-radius: 8px;
+            padding: 13px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: -15px;
+        }
+
+        .button2{
+            background-color: aliceblue;
+            border: none;
+            width: 100%;
+            max-width: 400px;
+            height: 70px;
+            font-size: 18px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .media{
+            display: flex;
+            justify-content: end;
+            display: flex;
+            margin-bottom: 35px;    
+        }
+
+        .leftcontent{
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: aliceblue;
+            padding: 15px 40px;
+            position: absolute;
+            background-color: black;
+            height: 675px;
+            width:auto;
+        }
+
+        .movies{
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            gap: 10px;
+            justify-content:around;
+        }
+
+        .movies img{
+            width: 200px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 12px;
+
+        }
+
+        .movienav{
+            display: flex;
+            justify-content: end;
+        }
+
+        .footer{
+            background-color: #1d1f24;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        .footer-logo{
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            
+        }
+
+        .footer-logo-img{
+    width: 120px;  
+    height: auto;
+}
+
+        .footer-links{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 15px;
+        }
+
+        .footer-links a{
+            color: #4da6ff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .footer-links a:hover{
+            text-decoration: underline;
+        }
+
+        .footer-copy{
+            color: #8b8b8b;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav">
+            <strong><div>prime video</div></strong>
+            <strong><div>Home</div></strong>
+            <strong><div>Movies</div></strong>
+            <strong><div>TV Shows</div></strong>
+            <strong><div>Live TV</div></strong>
+            <strong><div style="font-size: 20px; width:10px;">|</div></strong>
+            <strong><div><span class="material-symbols-outlined" style="margin-top: 5px;">dashboard_customize</span></div></strong>
+            <strong><div style="margin-left: -20px;">Subscription</div></strong>
+        </div>
+
+        <div class="rightnav">
+            <span class="material-symbols-outlined">search</span>
+            <span class="material-symbols-outlined">apps</span>
+            <span class="material-symbols-outlined">bookmark</span>
+            <span class="material-symbols-outlined" style="font-size: 30px;">account_circle</span>
+            <span><strong><button class="button1">Join Prime</button></strong></span>
+        </div>
+    </div>
+
+    <div class="leftcontent">
+        <strong><h1 style="font-size: 40px;">Welcome to Prime Video</h1></strong>
+
+        <p >Watch the latest movies, TV shows, and award-winning Amazon Originals</p>
+
+        <div>
+            <strong><button class="button2"><h4>Join Prime Lite at ₹799/year</h4></button></strong>
+            <h3 style="margin-left: 80px;">Effectively ₹67/month</h3>
+            <strong><button class="button2"><h4>Join Prime Annual at ₹1499/year</h4></button></strong>
+            <h3 style="margin-left: 80px;">Effectively ₹125/month</h3>
+            <strong><button class="button2"><h4>Join Prime Monthly at ₹299/month</h4></button></strong>
+            <strong><button class="button2"><h4>Compare All Plans</h4></button></strong>
+        </div>
+    </div>
+
+    <div class="media">
+        <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP.jpg" >
+    </div>
+
+
+    <div class="leftcontent" style="display: flex; flex-direction: column; gap: 20px">
+        <strong><h1 style="font-size: 35px;">Movie rentals on Prime Video</h1></strong>
+        <p>Watch the latest movies, TV shows, and award-winning Amazon Originals</p>
+
+        <strong><button style="border: none; border-radius: 10px; font-size:large; width: 140px; height: 65px"><h4>Rent now</h4></button></strong>
+    </div>
+
+
+    <div class="media">
+        <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/TVOD/TVOD_MLP_Right._SX1440_CR575,0,865,675_QL80_AC_FP_.jpg">
+    </div>
+
+
+    <div>
+        <div class="leftcontent" style="width: 560px; height: 400px;">
+            <strong><h1 style="font-size: 40px;">Your favorite subscriptions all in one place</h1></strong>
+            <p>Customers can subscribe to get access to a variety of premium and specialty content, easily accessible within the Prime Video app</p>
+        </div>
+    </div>
+
+    <div class="movienav">
+        <div class="movies">
+            <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/2026/426x294_AppleTV._AC_SX400_QL80_FP_.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/2026/426x294_Moviesphere._AC_SX400_QL80_FP_.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/2026/426x294_Lionsgateplay._AC_SX400_QL80_FP_.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/2026/426x294_Goldminesplay._AC_SX400_QL80_FP_.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/2026/426x294_Animetimes._AC_SX400_QL80_FP_.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/2026/426x294_Manoramamax._AC_SX400_QL80_FP_.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/2026/426x294_Chaupal._AC_SX400_QL80_FP_.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/2026/426x294_BBCPlayer._AC_SX400_QL80_FP_.jpg">
+            <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/2026/426x294_NBA._AC_SX400_QL80_FP_.jpg">
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <img src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/logo/pv_logo_white._CB548637580_.png" alt="Prime Video Logo" class="footer-logo-img">
+
+        <div class="footer-links">
+            <a href="#">Terms and Privacy Notice</a>
+            <a href="#">Send us feedback</a>
+            <a href="#">Help</a>
+        </div>
+
+        <p class="footer-copy">
+            © 1996-2026, Amazon.com, Inc. or its affiliates
+        </p>
+    </footer>
+
+</body>
+</html>
