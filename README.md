@@ -4,7 +4,21 @@ Overview
 
 ShopStore is a full-stack E-Commerce web application developed using the MERN stack (MongoDB, Express.js, React.js, and Node.js). The platform provides a modern online shopping experience with secure authentication, product management, shopping cart functionality, order processing, and integrated online payments through Razorpay.
 
-Features
+# Features
+🔐 User Authentication & Authorization (Login/Register)
+🛒 Shopping Cart Management
+💳 Secure Online Payments using Razorpay
+📦 Product Listing & Product Details
+🔍 Search and Filter Products
+❤️ Wishlist Functionality
+📱 Responsive UI for Mobile & Desktop
+⚡ RESTful APIs using Express.js
+🔄 Axios for API Communication
+🌐 CORS Configuration for Secure Cross-Origin Requests
+🗄️ MongoDB Database Integration
+🔑 JWT-Based Authentication
+👤 User Profile Management
+📋 Order Management System
 User Features
 User Registration and Login
 JWT-Based Authentication & Authorization
@@ -59,7 +73,7 @@ Responsive User Interface
 Scalable and Maintainable Code Structure
 Real-World E-Commerce Workflow Implementation
 Installation
-Clone Repository
+# Clone Repository
 git clone https://github.com/your-username/shopstore.git
 cd shopstore
 Backend Setup
@@ -94,25 +108,11 @@ Author
 Hemanth Sai Nallappagari
 B.Tech Computer Science and Engineering
 SRM University AP
-🚀 ShopStore is a full-stack MERN E-Commerce application featuring user authentication, product management, shopping cart, order processing, and Razorpay payment integration. Built with React, Node.js, Express, MongoDB, Axios, JWT, and REST APIs, delivering a secure and responsive shopping experience.
+# 🚀 ShopStore is a full-stack MERN E-Commerce application featuring user authentication, product management, shopping cart, order processing, and Razorpay payment integration. Built with React, Node.js, Express, MongoDB, Axios, JWT, and REST APIs, delivering a secure and responsive shopping experience.
 ShopStore is a full-stack E-Commerce web application built using the MERN Stack (MongoDB, Express.js, React.js, Node.js). The platform provides a complete online shopping experience with secure user authentication, product management, shopping cart functionality, order processing, and online payments through Razorpay integration.
 
-Features
-🔐 User Authentication & Authorization (Login/Register)
-🛒 Shopping Cart Management
-💳 Secure Online Payments using Razorpay
-📦 Product Listing & Product Details
-🔍 Search and Filter Products
-❤️ Wishlist Functionality
-📱 Responsive UI for Mobile & Desktop
-⚡ RESTful APIs using Express.js
-🔄 Axios for API Communication
-🌐 CORS Configuration for Secure Cross-Origin Requests
-🗄️ MongoDB Database Integration
-🔑 JWT-Based Authentication
-👤 User Profile Management
-📋 Order Management System
-Tech Stack
+
+# Tech Stack
 Frontend: React.js, Axios, CSS
 Backend: Node.js, Express.js
 Database: MongoDB
