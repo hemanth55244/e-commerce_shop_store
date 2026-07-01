@@ -1,24 +1,27 @@
-const jwt = require("jsonwebtoken")
+const jwt = require("jsonwebtoken");
 
-const auth = async(req,res,next)=>{
-    try{
-        const token = req.header("authorization")
-        if(!token)
-        {
-            res.status(400).json({
-                message: "loging to access the content..."
-            })
-        }
-        const decode = jwt.verify(token,process.env.JWT_SECRET)
-        req.user.decode()
-        next()
+const auth = async (req, res, next) => {
+  try {
+    const authHeader = req.header("authorization");
 
-
-    }catch(err)
-    {
-        res.status(500).json({
-            message: err,
-        })
+    if (!authHeader) {
+      return res.status(401).json({
+        message: "login to access the content",
+      });
     }
-}
-module.exports = auth
+
+    const token = authHeader.startsWith("Bearer ")
+      ? authHeader.slice(7)
+      : authHeader;
+
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.user = decoded;
+    next();
+  } catch (err) {
+    return res.status(401).json({
+      message: "invalid or expired token",
+    });
+  }
+};
+
+module.exports = auth;
